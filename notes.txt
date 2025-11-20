@@ -1,0 +1,12 @@
+#what Terraform plans to do for the DEV environment
+terraform plan -var-file="environments/dev.tfvars"
+
+# Execute the plan and apply the changes for DEV
+terraform apply -var-file="environments/dev.tfvars"
+
+# what Terraform plans to do for the PROD environment
+terraform plan -var-file="environments/prod.tfvars"
+
+# Execute the plan and apply the changes for PROD
+terraform apply -var-file="environments/prod.tfvars"
+
